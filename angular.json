@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ci-cd-practical1"
+    }
+  },
+  "defaultProject": "ci-cd-practical1",
+  "cli": {
+    "analytics": false
+  }
 }
