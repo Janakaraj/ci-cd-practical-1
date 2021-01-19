@@ -44,6 +44,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: artifact-dev
+        run: ls
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
