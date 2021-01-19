@@ -1,5 +1,4 @@
 .parent{
-    color:tomato;
     position: absolute;
   top: 50%;
   left: 50%;
@@ -13,66 +12,73 @@ h3{
     padding: 2rem;
 }
 .blue{
+    color:blue;
     -webkit-animation: BLINKITB 4s infinite 1s;  /* Safari 4+ */
     -moz-animation: BLINKITB 4s infinite 1s;  /* Fx 5+ */
     -o-animation: BLINKITB 4s infinite 1s;  /* Opera 12+ */
     animation: BLINKITB 4s infinite 1s;  /* IE 10+, Fx 29+ */
 }
 .red{
+    color:crimson;
     -webkit-animation: BLINKITR 4s infinite;  /* Safari 4+ */
     -moz-animation: BLINKITR 4s infinite;  /* Fx 5+ */
     -o-animation: BLINKITR 4s infinite;  /* Opera 12+ */
     animation: BLINKITR 4s infinite;  /* IE 10+, Fx 29+ */
 }
 .green{
+    color:green;
     -webkit-animation: BLINKITG 4s infinite 2s;  /* Safari 4+ */
     -moz-animation: BLINKITG 4s infinite 2s;  /* Fx 5+ */
     -o-animation: BLINKITG 4s infinite 2s;  /* Opera 12+ */
     animation: BLINKITG 4s infinite 2s;  /* IE 10+, Fx 29+ */
 }
 .yellow{
+    color: yellow;
     -webkit-animation: BLINKITY 4s infinite 3s;  /* Safari 4+ */
     -moz-animation: BLINKITY 4s infinite 3s;  /* Fx 5+ */
     -o-animation: BLINKITY 4s infinite 3s;  /* Opera 12+ */
     animation: BLINKITY 4s infinite 3s;  /* IE 10+, Fx 29+ */
 }
 @keyframes BLINKITB {
-    0%, 74% {
-      background-color: white;
-      color:blue;
-    }
-    75%, 100% {
-      background-color: blue;
+    0%, 24% {
+        background-color: blue;
       color: white;
+     
+    }
+    25%, 100% {
+        background-color: white;
+        color:blue;
     }
   }
   @keyframes BLINKITG {
-    0%, 74% {
-      background-color: white;
-      color:darkgreen;
+    0%, 24% {
+        background-color: darkgreen;
+        color: white;
+      
     }
-    75%, 100% {
-      background-color: darkgreen;
-      color: white;
+    25%, 100% {
+        background-color: white;
+        color:darkgreen;
     }
   }
   @keyframes BLINKITR {
-    0%, 74% {
-      background-color: white;
-      color:crimson;
-    }
-    75%, 100% {
-      background-color: crimson;
+    0%, 24% {
+        background-color: crimson;
       color: white;
+      
+    }
+    25%, 100% {
+        background-color: white;
+        color:crimson;
     }
   }
   @keyframes BLINKITY {
-    0%, 74% {
-      background-color: white;
-      color:yellow;
-    }
-    75%, 100% {
-      background-color:yellow;
+    0%, 24% {
+        background-color:yellow;
       color: white;
+    }
+    25%, 100% {
+        background-color: white;
+        color:yellow;
     }
   }
