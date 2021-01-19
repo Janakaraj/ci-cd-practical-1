@@ -52,4 +52,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: artifact-dev/ci-cd-practical1
+          FOLDER: ci-cd-practical1
