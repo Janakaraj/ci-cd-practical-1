@@ -45,7 +45,8 @@ jobs:
         with:
           name: artifact-dev
       - name: Show files
-        run: ls
+        run: |
+          ls /home/runner/work/ci-cd-practical-1/ci-cd-practical-1
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
