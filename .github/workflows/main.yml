@@ -1,6 +1,6 @@
 name: Build Angular
 on: 
-  push:
+  pull_request:
     branches:
       - master
 jobs:
@@ -31,7 +31,7 @@ jobs:
       - name: Upload build output to artifact
         uses: actions/upload-artifact@v2
         with:
-          name: my-artifact
+          name: artifact
           path: dist
   deploy:
     runs-on: ubuntu-latest
@@ -42,7 +42,7 @@ jobs:
       - name: Download build
         uses: actions/download-artifact@v2
         with:
-          name: artifact-dev
+          name: artifact
       - name: Show files
         run: |
           ls /home/runner/work/ci-cd-practical-1/ci-cd-practical-1/ci-cd-practical1
