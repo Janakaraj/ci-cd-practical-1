@@ -51,7 +51,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
+          BRANCH: gh-pages-dev
           FOLDER: ci-cd-practical1
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@v0.5.1
